@@ -1,0 +1,352 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooPay - Payment Gateway with LinePay 1.0.0\n"
+"POT-Creation-Date: 2015-05-21 17:52+0900\n"
+"PO-Revision-Date: 2015-05-21 17:52+0900\n"
+"Last-Translator: \n"
+"Language-Team: Planet8 <thomas@planet8.co>\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8beta1\n"
+"X-Poedit-Basepath: ./\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../linepay.php:26
+msgid "Settings"
+msgstr "환경설정"
+
+#: ../linepay.php:84
+msgid "Refund Order"
+msgstr "주문 환불하기"
+
+#: ../linepay.php:135 ../linepay.php:161
+msgid "Are you sure you want to continue the refund?"
+msgstr "이 주문에 대한 환불을 계속 하시겠습니까?"
+
+#: ../linepay.php:137
+msgid ""
+"By clicking the 'Refund' button below, this order will be refunded and "
+"cancelled."
+msgstr "'환불' 버튼을 누르시면 결제가 취소되며 환불처리 됩니다."
+
+#: ../linepay.php:140 ../linepay.php:187
+msgid "Refund"
+msgstr "환불하기"
+
+#: ../linepay.php:144
+msgid "This order has already been refunded."
+msgstr "이 주문은 이미 환불 되었습니다."
+
+#: ../linepay.php:147
+#, php-format
+msgid "This order cannot be refunded. Refundable order status is(are): %s"
+msgstr "이 주문은 환불이 불가능합니다. 환불이 가능한 주문의 상태는: %s 입니다."
+
+#: ../linepay.php:154
+#, php-format
+msgid ""
+"There are no refundable order status. Please set them first <a "
+"href='%s'>here</a>."
+msgstr ""
+"환불 가능한 주문 상태가 설정되지 않았습니다. <a href='%s'>여기</a>서 먼저 설"
+"정해주세요."
+
+#: ../linepay.php:255
+msgid "Enable/Disable"
+msgstr "활성화/비활성화"
+
+#: ../linepay.php:257
+msgid "Enable this method."
+msgstr "결제수단 활성화"
+
+#: ../linepay.php:261
+msgid "Title"
+msgstr "제목"
+
+#: ../linepay.php:263
+msgid ""
+"Title that users will see during checkout. You can customize this in the PRO "
+"version."
+msgstr ""
+"체크아웃시 사용자가 보게 될 제목입니다. 프로 버전에서 수정할 수 있습니다."
+
+#: ../linepay.php:267
+msgid "Enable/Disable Sandbox Mode"
+msgstr "샌드박스 모드 활성화/비활성화"
+
+#: ../linepay.php:269
+msgid "Enable sandbox mode."
+msgstr "샌드박스 모드가 활성화 됩니다."
+
+#: ../linepay.php:274
+msgid "Description"
+msgstr "설명"
+
+#: ../linepay.php:276
+msgid ""
+"Description that users will see during checkout. You can customize this in "
+"the PRO version."
+msgstr ""
+"체크아웃시 사용자가 보게 될 설명입니다. 프로 버전에서 수정할 수 있습니다."
+
+#: ../linepay.php:280
+msgid "Channel ID"
+msgstr "채널 아이디 (Channel ID)"
+
+#: ../linepay.php:282
+#, php-format
+msgid "Enter your Channel ID. You can get it from: <a href=\"%s\">%s</a>"
+msgstr ""
+"채널 아이디 (Channel ID)를 입력해 주세요. 여기서 받으실 수 있습니다: <a href="
+"\"%s\">%s</a>"
+
+#: ../linepay.php:286
+msgid "Channel Secret Key"
+msgstr "채널 시크릿 키 (Channel Secret Key)"
+
+#: ../linepay.php:288
+#, php-format
+msgid ""
+"Enter your Channel Secret Key. You can get it from: <a href=\"%s\">%s</a>"
+msgstr ""
+"채널 시크릿 키 (Channel Secret Key)를 입력해 주세요. 여기서 받으실 수 있습니"
+"다: <a href=\"%s\">%s</a>"
+
+#: ../linepay.php:292
+msgid "Language"
+msgstr "언어"
+
+#: ../linepay.php:294
+msgid "Select the language for your LinePay form."
+msgstr "라인페이 폼에 사용할 언어를 선택해주세요."
+
+#: ../linepay.php:296
+msgid "Korean"
+msgstr "한국어"
+
+#: ../linepay.php:297
+msgid "Japanese"
+msgstr "일본어"
+
+#: ../linepay.php:298
+msgid "English"
+msgstr "영어"
+
+#: ../linepay.php:299
+msgid "Chinese (Ganche)"
+msgstr "중국어 (간체)"
+
+#: ../linepay.php:300
+msgid "Chinese (Bunche)"
+msgstr "중국어 (번체)"
+
+#: ../linepay.php:301
+msgid "Thai"
+msgstr "태국어"
+
+#: ../linepay.php:306
+msgid "Refundable Status for Administrator"
+msgstr "관리자 환불가능 상태"
+
+#: ../linepay.php:309 ../linepay.php:316
+msgid "Select the order status for allowing refund."
+msgstr "환불 가능한 주문 상태를 선택해주세요."
+
+#: ../linepay.php:313
+msgid "Refundable Satus for Customer"
+msgstr "고객 환불가능 상태"
+
+#: ../linepay.php:315 ../linepay.php:321 ../linepay.php:327
+msgid "This feature is only available in the PRO version."
+msgstr "이 기능은 프로 버전에서만 지원합니다."
+
+#: ../linepay.php:319
+msgid "Checkout Processing Image"
+msgstr "결제 진행중 이미지"
+
+#: ../linepay.php:322
+msgid ""
+"Please select or upload your image for the checkout processing page. Leave "
+"blank to show no image."
+msgstr ""
+"결제 진행중 이미지를 선택하시거나 업로드해 주세요. 사용하지 않으시려면 빈 칸"
+"으로 두세요."
+
+#: ../linepay.php:325
+msgid "Checkout Processing Text"
+msgstr "결제 진행중 텍스트"
+
+#: ../linepay.php:328
+msgid ""
+"Text that users will see on the checkout processing page. You can use some "
+"HTML tags as well."
+msgstr ""
+"결제 진행시 사용자들이 볼 수 있는 텍스트 입니다. 간단한 HTML 태그를 사용하실 "
+"수 있습니다."
+
+#: ../linepay.php:372
+msgid "Want the PRO version?"
+msgstr "프로 버전을 원하십니까?"
+
+#: ../linepay.php:372
+msgid ""
+"Visit <a href=\"http://planet8.co\" target=\"_blank\">http://planet8.co</a>! "
+"You can remove our watermarks and customize many options!"
+msgstr ""
+"<a href=\"http://planet8.co\" target=\"_blank\">http://planet8.co</a> 사이트"
+"를 방문해주세요! 워터 마크 제거 및 여러 옵션을 사용하실 수 있습니다!"
+
+#: ../linepay.php:375 ../linepay.php:377 ../linepay.php:384
+msgid "Gateway Disabled"
+msgstr "게이트웨이 비활성화"
+
+#: ../linepay.php:375
+#, php-format
+msgid ""
+"You haven't entered a Channel ID yet! You can get it from: <a href=\"%s\">"
+"%s</a>"
+msgstr ""
+"아직 채널 아이디 (Channel ID)를 입력하지 않으셨습니다! 여기서 받으실 수 있습"
+"니다: <a href=\"%s\">%s</a>"
+
+#: ../linepay.php:377
+#, php-format
+msgid ""
+"You haven't entered a Channel Secret Key yet! You can get it from: <a href="
+"\"%s\">%s</a>"
+msgstr ""
+"아직 채널 시크릿 키 (Channel Secret Key)를 입력하지 않으셨습니다! 여기서 받으"
+"실 수 있습니다: <a href=\"%s\">%s</a>"
+
+#: ../linepay.php:379
+msgid "Sandbox mode is enabled!"
+msgstr "샌드박스 모드가 활성화 되어있습니다!"
+
+#: ../linepay.php:379
+msgid "Please disable sandbox if you aren't testing anything."
+msgstr "테스트 중이 아니시라면, 샌드박스 모드를 비활성화 해주세요."
+
+#: ../linepay.php:384 ../linepay.php:411
+#, php-format
+msgid ""
+"Your currency (%s) is not supported by this payment method. This payment "
+"method only supports: %s."
+msgstr ""
+"현재 사용하는 통화 (%s) 는 이 결제 방법에서 사용할 수 없습니다. 사용 가능한 "
+"통화는 다음과 같습니다: %s."
+
+#: ../linepay.php:386
+msgid "Please Note"
+msgstr "참고 사항"
+
+#: ../linepay.php:386
+#, php-format
+msgid ""
+"Your currency (%s) is not recommended by this payment method. This payment "
+"method recommeds the following currency: %s."
+msgstr ""
+"현재 사용하는 통화 (%s) 는 이 결제 방법에서 권장하지 않습니다. 권장 통화는 다"
+"음과 같습니다: %s."
+
+#: ../linepay.php:400
+msgid "Please wait while your payment is being processed."
+msgstr "결제가 진행중입니다. 잠시만 기다려주세요."
+
+#: ../linepay.php:402
+msgid "Powered by <a href=\"http://planet8.co\" target=\"_blank\">Planet8</a>."
+msgstr ""
+"Powered by <a href=\"http://planet8.co\" target=\"_blank\">Planet8</a>."
+
+#: ../linepay.php:527
+#, php-format
+msgid "Starting payment process. Timestamp: %s."
+msgstr "결제 프로세스를 시작합니다. 타임스탬프: %s."
+
+#: ../linepay.php:531 ../linepay.php:532 ../linepay.php:537 ../linepay.php:538
+msgid " (Mobile)"
+msgstr " (모바일)"
+
+#: ../linepay.php:655
+#, php-format
+msgid "Payment request received. LinePay TID: %s. Timestamp: %s."
+msgstr "결제 요청을 받았습니다. 라인페이 TID: %s. 타임스탬프: %s."
+
+#: ../linepay.php:659
+#, php-format
+msgid "Failed to request payment. Message: %s. Timestamp: %s."
+msgstr "결제 요청 실패. 메세지: %s. 타임스탬프: %s."
+
+#: ../linepay.php:661 ../linepay.php:756 ../linepay.php:867
+#, php-format
+msgid ""
+"An error has occurred while processing your request. Code: %s. Message: %s."
+msgstr "요청을 처리하는 동안 오류가 발생했습니다. 코드: %s. 메세지: %s."
+
+#: ../linepay.php:663 ../linepay.php:758 ../linepay.php:869
+msgid ""
+"An error has occurred while processing your request. Please contact the "
+"administrator."
+msgstr "요청을 처리하는 동안 오류가 발생했습니다. 관리자에게 문의하십시오."
+
+#: ../linepay.php:736
+#, php-format
+msgid "Payment confirmed and complete. LinePay TID: %s. Timestamp: %s."
+msgstr "결제 완료. 라인페이 TID: %s. 타임스탬프: %s."
+
+#: ../linepay.php:754
+#, php-format
+msgid "Failed to confirm payment. Message: %s. Timestamp: %s."
+msgstr "결제 확인 실패. 메세지: %s. 타임스탬프: %s."
+
+#: ../linepay.php:785 ../linepay.php:856
+msgid "Order does not exist. Refund failed."
+msgstr "주문이 존재하지 않습니다. 환불에 실패하였습니다."
+
+#: ../linepay.php:830
+#, php-format
+msgid ""
+"Order has been refunded by customer. LinePay Refund TID: %s. Timestamp: %s."
+msgstr ""
+"고객에 의해 주문이 환불되었습니다. 라인페이 환불 TID: %s. 타임스탬프: %s."
+
+#: ../linepay.php:832
+#, php-format
+msgid ""
+"Order has been refunded by administrator. LinePay Refund TID: %s. Timestamp: "
+"%s."
+msgstr ""
+"관리자에 의해 주문이 환불되었습니다. 라인페이 환불 TID: %s. 타임스탬프: %s."
+
+#: ../linepay.php:837 ../linepay.php:862
+msgid "Order has been refunded."
+msgstr "주문이 환불되었습니다."
+
+#: ../linepay.php:840
+#, php-format
+msgid ""
+"Refund request received but an error has occurred. Message: %s. Timestamp: "
+"%s."
+msgstr ""
+"환불 요청을 받았지만 오류가 발생하였습니다. 메세지: %s. 타임스탬프: %s."
+
+#: ../linepay.php:844
+#, php-format
+msgid "Refund request received but an error has occurred. Message: %s."
+msgstr "환불 요청을 받았지만 오류가 발생하였습니다. 메세지: %s."
+
+#: ../linepay.php:850
+msgid "TID does not exist. Refund failed."
+msgstr "TID가 존재하지 않습니다. 환불에 실패하였습니다."
+
+#: ../linepay.php:950
+msgid "LinePay"
+msgstr "라인페이"
+
+#: ../linepay.php:951
+msgid "Payment via LinePay."
+msgstr "라인페이로 결제합니다."
