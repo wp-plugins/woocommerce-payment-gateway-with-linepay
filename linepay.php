@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce Payment Gateway with LinePay
 Plugin URI: http://www.planet8.co/
 Description: Korean Payment Gateway integrated with LinePay for WooCommerce.
-Version: 1.0.0
+Version: 1.0.1
 Author: Planet8
 Author URI: http://www.planet8.co/
 Copyright : Planet8 proprietary.
