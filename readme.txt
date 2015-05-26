@@ -1,8 +1,7 @@
 === WooCommerce Payment Gateway with LinePay ===
 Contributors: massu0310
 Donate link: http://planet8.co
-Tags: linepay, naver, payment gateway, woocommerce payment gateway, planet8, linecorp, line 
-messenger, woocommerce, korea, japan
+Tags: linepay, naver, payment gateway, woocommerce payment gateway, planet8, linecorp, line messenger, woocommerce, korea, japan
 Requires at least: 4.0
 Tested up to: 4.2.2
 Stable tag: 4.2.2
@@ -51,9 +50,6 @@ Coming soon
 
 == Changelog ==
 
-= 1.0.0 =
-* First version
-
 = 1.0.1 =
 * Changed some text in the reademe.txt
 * Moved the screenshots to appropirate folder
@@ -62,3 +58,7 @@ Coming soon
 * Added logo image
 * Added banner image
 * Fixed 404 error
+* Fixed tags
+
+= 1.0.0 =
+* First version
