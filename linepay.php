@@ -254,7 +254,12 @@ class WC_Gateway_LinePay extends WC_Payment_Gateway {
 	}
 
     function init_form_fields() {
-		$this->form_fields = array(
+		// General Settings
+		$general_array = array(
+			'general_title' => array(
+				'title' => __( 'General Settings', 'wc-gateway-linepay' ),
+				'type' => 'title',
+			),
 			'enabled' => array(
 				'title' => __( 'Enable/Disable', 'wc-gateway-linepay' ),
 				'type' => 'checkbox',
@@ -292,6 +297,35 @@ class WC_Gateway_LinePay extends WC_Payment_Gateway {
 				'description' => sprintf( __( 'Enter your Channel Secret Key. You can get it from: <a href="%s">%s</a>', 'wc-gateway-linepay' ), $this->get_linepay_admin_url(), $this->get_linepay_admin_url() ),
 				'default' => '',
 			),
+		);
+
+		// Refund Settings
+		$refund_array = array(
+			'refund_title' => array(
+				'title' => __( 'Refund Settings', 'wc-gateway-linepay' ),
+				'type' => 'title',
+			),
+			'admin_refund' => array (
+				'title' => __( 'Refundable Status for Administrator', 'wc-gateway-linepay' ),
+				'type' => 'multiselect',
+				'class' => 'chosen_select',
+				'description' => __( 'Select the order status for allowing refund.', 'wc-gateway-linepay' ),
+				'options' => $this->get_status_array(),
+			),
+			'customer_refund' => array (
+				'title' => __( 'Refundable Satus for Customer', 'wc-gateway-linepay' ),
+				'type' => 'txt_info',
+				'txt' => __( 'This feature is only available in the PRO version.', 'wc-gateway-linepay' ),
+				'description' => __( 'Select the order status for allowing refund.', 'wc-gateway-linepay' ),
+			)
+		);
+
+		// Design Settings
+		$design_array = array(
+			'design_title' => array(
+				'title' => __( 'Design Settings', 'wc-gateway-linepay' ),
+				'type' => 'title',
+			),
 			'langCd' => array(
 				'title' => __( 'Language', 'wc-gateway-linepay' ),
 				'type' => 'select',
@@ -306,19 +340,6 @@ class WC_Gateway_LinePay extends WC_Payment_Gateway {
 				),
 				'default' => 'kr',
 			),
-			'admin_refund' => array (
-				'title' => __( 'Refundable Status for Administrator', 'wc-gateway-linepay' ),
-				'type' => 'multiselect',
-				'class' => 'chosen_select',
-				'description' => __( 'Select the order status for allowing refund.', 'wc-gateway-linepay' ),
-				'options' => $this->get_status_array(),
-			),
-			'customer_refund' => array (
-				'title' => __( 'Refundable Satus for Customer', 'wc-gateway-linepay' ),
-				'type' => 'txt_info',
-				'txt' => __( 'This feature is only available in the PRO version.', 'wc-gateway-linepay' ),
-				'description' => __( 'Select the order status for allowing refund.', 'wc-gateway-linepay' ),
-			),
 			'checkout_img' => array(
 				'title' => __( 'Checkout Processing Image', 'wc-gateway-linepay' ),
 				'type' => 'txt_info',
@@ -332,6 +353,11 @@ class WC_Gateway_LinePay extends WC_Payment_Gateway {
 				'description' => __( 'Text that users will see on the checkout processing page. You can use some HTML tags as well.', 'wc-gateway-linepay' ),
 			),
 		);
+
+		$form_array = array_merge( $general_array, $refund_array );
+		$form_array = array_merge( $form_array, $design_array );
+
+		$this->form_fields = $form_array;
 	}
 
 	function add_extra_form_fields() {
@@ -435,7 +461,8 @@ class WC_Gateway_LinePay extends WC_Payment_Gateway {
 		}
 
 		$productName				= sanitize_text_field( $item_name );
-		$productImageUrl			= wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ) )[0];
+		$thumb						= wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ) );
+		$productImageUrl			= $thumb[0];
 		$currency					= get_woocommerce_currency();
 		$mid						= '';
 		$confirmUrl					= home_url( '/wc-api/wc_gateway_linepay_confirm' );

@@ -52,6 +52,9 @@ Coming soon
 
 = 1.0.2 =
 * Added some version code
+* Fixed some errors
+* Divided the sections into General, Refund, and Design
+* Changed screenshot
 
 = 1.0.1 =
 * Changed some text in the reademe.txt
