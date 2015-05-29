@@ -50,6 +50,9 @@ Coming soon
 
 == Changelog ==
 
+= 1.0.2 =
+* Added some version code
+
 = 1.0.1 =
 * Changed some text in the reademe.txt
 * Moved the screenshots to appropirate folder

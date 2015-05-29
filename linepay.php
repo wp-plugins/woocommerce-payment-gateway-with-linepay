@@ -3,13 +3,17 @@
 Plugin Name: WooCommerce Payment Gateway with LinePay
 Plugin URI: http://www.planet8.co/
 Description: Korean Payment Gateway integrated with LinePay for WooCommerce.
-Version: 1.0.1
+Version: 1.0.2
 Author: Planet8
 Author URI: http://www.planet8.co/
 Copyright : Planet8 proprietary.
 Developer : Thomas Jang ( thomas@planet8.co )
 */
-if ( ! defined( 'ABSPATH' ) ) exit; 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+// Define
+define( PRODUCT_ID, 'wordpress-linepay' );
+define( PRODUCT_VERSION, '1.0.2' );
 
 add_action( 'plugins_loaded', 'woocommerce_linepay_init', 0 );
  
@@ -400,6 +404,8 @@ class WC_Gateway_LinePay extends WC_Payment_Gateway {
 		echo '<div class="p8-checkout-txt">' . __( 'Please wait while your payment is being processed.', 'wc-gateway-linepay' ) . '</div>';
 
 		echo '<div class="p8-checkout-txt">' . __( 'Powered by <a href="http://planet8.co" target="_blank">Planet8</a>.', 'wc-gateway-linepay' ) . '</div>';
+
+		require_once dirname( __FILE__ ) . '/bin/lib/Version.php';
 
 		$currency_check = $this->currency_check( $order, $this->allowed_currency );
 
