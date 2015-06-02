@@ -1,5 +1,5 @@
 === WooCommerce Payment Gateway with LinePay ===
-Contributors: massu0310
+Contributors: planet8co, massu0310
 Donate link: http://planet8.co
 Tags: linepay, naver, payment gateway, woocommerce payment gateway, planet8, linecorp, line messenger, woocommerce, korea, japan
 Requires at least: 4.0
